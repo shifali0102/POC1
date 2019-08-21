@@ -1,0 +1,6 @@
+1. Java installed.
+2. Maven installed.
+3. Jenkins installed.
+4. create job on jenkins dashboard. 
+5. Allow using git and create username and password to access ur (private git repo).
+6.
