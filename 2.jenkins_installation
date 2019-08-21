@@ -1,0 +1,19 @@
+--> wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+--> sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+--> sudo apt-get update
+--> sudo apt-get install jenkins
+
+This package installation will:
+1. Setup Jenkins as a daemon launched on start. See /etc/init.d/jenkins for more details.
+2. Create a ‘jenkins’ user to run this service.
+3. Direct console log output to the file /var/log/jenkins/jenkins.log. Check this file if you are troubleshooting Jenkins.
+4. Populate /etc/default/jenkins with configuration parameters for the launch, e.g JENKINS_HOME
+this file has all the details where the logs files will be stored
+the port for jenkins 
+jenkins war file 
+jenkins home
+By default whatever pipelines are created are created in this path 
+/var/lib/jenkins/workspace/pipe1(this is the name of ur pipeline)
+5. Set Jenkins to listen on port 8080. Access this port with your browser to start configuration.
+
+3. Go to your VM -> Networking open the port 8080 and restart the VM and then access Jenkins on port 8080.
