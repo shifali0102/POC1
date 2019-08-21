@@ -1,0 +1,16 @@
+ Since Jenkins is a Java application, the first step is to install Java
+ install the Java 8 OpenJDK package
+--> sudo apt update
+--> sudo apt install openjdk-8-jdk
+
+                  !!!SAME MACHINE CAN HAVE DIFFERENT VERSIONS OF JAVA AND WE CAN SWITCH BETWEEN VERSIONS!!!!
+
+The current version of Jenkins does not support Java 10 (and Java 11) yet. 
+If you have multiple versions of Java installed on your machine make sure Java 8 is the default Java version.
+
+check where java is getting installed 
+
+sudo vi ~/.bashrc
+JAVA_HOME=/usr/lib/jvm/...(the path is generally this)
+source ~/.bashrc 
+echo JAVA_HOME
