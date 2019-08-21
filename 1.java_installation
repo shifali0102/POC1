@@ -14,3 +14,6 @@ sudo vi ~/.bashrc
 JAVA_HOME=/usr/lib/jvm/...(the path is generally this)
 source ~/.bashrc 
 echo JAVA_HOME
+
+UNINSTALL JAVA FROM LINUX MACHINE
+https://novicestuffs.wordpress.com/2017/04/25/how-to-uninstall-java-from-linux/
