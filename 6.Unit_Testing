@@ -18,7 +18,9 @@ example ur junit dependency in pom.xml for junit package mention in test class.
   now u can publish the results of junit
        --->junit 'target/surefire-reports/*.xml'
   test results will be shown in ur console output
-  
+  when i write this 
+       ----> sh 'mvn surefire-report:report'
+   This automatically downloads the surefire plugin without mentioned in pom.xml
 
 
 
