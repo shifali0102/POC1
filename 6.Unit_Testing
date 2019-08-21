@@ -16,10 +16,9 @@ example ur junit dependency in pom.xml for junit package mention in test class.
   nothing else is needed for executing for unit tests.
   
   now u can publish the results of junit
-        junit 'target/surefire-reports/*.xml'
-
-
-
+       --->junit 'target/surefire-reports/*.xml'
+  test results will be shown in ur console output
+  
 
 
 
