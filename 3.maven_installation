@@ -1,0 +1,13 @@
+cd /opt
+sudo wget http://mirrors.estointernet.in/apache/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.zip
+sudo unzip apache-maven-3.6.1-bin.zip
+sudo rm -rf apache-maven-3.6.1-bin.zip
+vi ~/.bashrc
+export M2_HOME=/opt/apache-maven-3.6.1
+export M2=$M2_HOME/bin
+export PATH=$M2:$PATH
+
+mvn --version(will not show maven installed since the changes have been made to bashrc and we now need to reload that file)
+source ~/.bashrc
+
+mvn --version
