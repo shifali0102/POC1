@@ -1,0 +1,57 @@
+now we have to do unit testing in jenkinsfile
+for that we need to have unit test files/classes in the correct path my-app/src/test/java/in/javahome/myweb/controller/
+then mvn test will take these classes execute the classes as per what is written in them in case of any dependencies needed
+will pom.xml come into picture.
+for example when running unit test classes there maybe some need of packages so u will need to mention them into ur depencies 
+to download them to run/execute ur classes.
+example ur junit dependency in pom.xml for junit package mention in test class.
+
+
+
+
+
+
+You can use mvn test to run unit test in Maven. Few examples:
+Run all the unit test classes.
+$ mvn test
+
+# Run a single test class.
+$ mvn -Dtest=TestApp1 test
+
+# Run multiple test classes.
+$ mvn -Dtest=TestApp1,TestApp2 test
+
+# Run a single test method from a test class.
+$ mvn -Dtest=TestApp1#methodname test
+
+# Run all test methods that match pattern 'testHello*' from a test class.
+$ mvn -Dtest=TestApp1#testHello* test
+
+# Run all test methods match pattern 'testHello*' and 'testMagic*' from a test class.
+$ mvn -Dtest=TestApp1#testHello*+testMagic* test
+
+sample unit test files
+
+https://www.mkyong.com/maven/how-to-run-unit-test-with-maven/
+
+How to skip unit test
+
+ 1. mvn package -Dmaven.test.skip=true
+ or
+ 
+ 2. <properties>
+        <maven.test.skip>true</maven.test.skip>
+    </properties>
+    or
+  3. surefire-plugin
+  <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.0.0-M1</version>
+    <configuration>
+        <skipTests>true</skipTests>
+    </configuration>
+</plugin>	
+
+
+ 
