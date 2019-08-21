@@ -1,0 +1,26 @@
+  Practise Set – 
+Jenkins
+1.	Create a Jenkins CICD pipeline using pipeline-as-code (declarative preferred). It should have below stages:
+a.	Code checkout from git
+b.	Store it in specific workspace directory
+c.	Execute code quality check with sonar with gating.
+d.	Execute Junit with gating.
+e.	Execute Code coverage with gating.
+f.	Implement security testing via your preferred tool with gating
+g.	Implement performance testing with a preferred tool with gating—jmeter
+Jmeter – functional testing.
+h.	Upload the build artifact into any preferred artifact repository tool.
+i.	Deploy the application into tomcat server.
+j.	Implement functional tests with selenium
+2.	In the above pipeline implement performance testing and security testing in parallel.
+3.	Ensure performance testing takes place in a Jenkins slave.
+4.	Implement webhook in git server which triggers pipeline build.
+5.	Use git multi-branch plugin to dynamically replicate pipeline in all available git branches of the repository.
+
+Maven
+1.	Include a new plugin (any tool of choice) to pom.xml
+2.	Above Jenkins pipeline should use maven goals and plugins wherever required.
+3.	Understand the differences between stages and goals in maven; also an understanding of what each goal accomplishes is necessary.
+4.	Understanding of dependencies, maven repository (local and central).
+
+
