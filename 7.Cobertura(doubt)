@@ -5,6 +5,7 @@ https://www.mkyong.com/qa/maven-cobertura-code-coverage-example/
 Maven will generate the Cobertura code coverage report at ${project}/target/site/cobertura/index.html.
 No need of any plugin on jenkins or on pom.xml
 
+
 To integrate Cobertura report into the Maven site, add the following to the reporting section.
 <reporting>
   <plugins>
@@ -34,5 +35,8 @@ To integrate Cobertura report into the Maven site, add the following to the repo
    </plugins>
 </reporting>
 
-mvn site
+--> mvn site
 Output - ${project}/site/index.html
+
+--> cobertura coberturaReportFile: 'target/site/cobertura/coverage.xml'
+This will take output from mvn site and publish reports to ur dashboard.
