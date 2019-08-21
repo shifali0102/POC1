@@ -38,5 +38,6 @@ To integrate Cobertura report into the Maven site, add the following to the repo
 --> mvn site
 Output - ${project}/site/index.html
 
+you need to download cobertura plugin in ur jenkins
 --> cobertura coberturaReportFile: 'target/site/cobertura/coverage.xml'
 This will take output from mvn site and publish reports to ur dashboard.
