@@ -5,6 +5,15 @@ will pom.xml come into picture.
 for example when running unit test classes there maybe some need of packages so u will need to mention them into ur depencies 
 to download them to run/execute ur classes.
 example ur junit dependency in pom.xml for junit package mention in test class.
+1.a.  <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.8.2</version>
+        <scope>test</scope> <!-- this could be just for tests -->
+     </dependency>
+     
+     
+  nothing else is needed for executing for unit tests.
 
 
 
