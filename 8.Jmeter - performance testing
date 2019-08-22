@@ -25,3 +25,6 @@ Create a src/test/jmeter directory, and place your JMeter load test there.
  When running the project, the JMeter Maven plugin searches for tests to run in this directory.
  
 --> mvn verify
+
+The raw results are located at /target/jmeter/results.The report generated will be something like .....jtl.
+
