@@ -1,1 +1,27 @@
+If you are using Maven and you need to load test your projects, you can use the JMeter Maven plugin. 
+This plugin enables you to run tests from within the Maven project, instead of running performance tests as scripts in JMeter.
 
+Now let’s take the JMeter script and see how you can run it from Maven as part of the build. 
+The JMeter Maven plugin allows you to do just that.
+<build>
+     <plugins>
+        <plugin>
+            <groupId>com.lazerycode.jmeter</groupId>
+            <artifactId>jmeter-maven-plugin</artifactId>
+            <version>2.1.0</version>
+            <executions>
+                <execution>
+                    <id>jmeter-tests</id>
+                    <goals>
+                        <goal>jmeter</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
+
+Create a src/test/jmeter directory, and place your JMeter load test there.
+ When running the project, the JMeter Maven plugin searches for tests to run in this directory.
+ 
+--> mvn verify
