@@ -1,3 +1,5 @@
+ https://medium.com/@anusha.sharma3010/configuring-maven-repository-manager-with-jfrog-artifactory-a0eb4b98dc22
+ 
  =>mvn deploy will put your packaged maven project into a remote repository for sharing with other developers.
  As a Maven repository, Artifactory is both a source for artifacts needed for a build, and a target to deploy
  artifacts generated in the build process.
