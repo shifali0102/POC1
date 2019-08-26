@@ -8,7 +8,6 @@ d.	Execute Junit with gating.
 e.	Execute Code coverage with gating.
 f.	Implement security testing via your preferred tool with gating
 g.	Implement performance testing with a preferred tool with gating—jmeter
-Jmeter – functional testing.
 h.	Upload the build artifact into any preferred artifact repository tool.
 i.	Deploy the application into tomcat server.
 j.	Implement functional tests with selenium
