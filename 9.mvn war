@@ -1,0 +1,4 @@
+mvn war:war 
+doesnt need any plugin in ur pom.xml
+The war will be created in
+Building war: /var/lib/jenkins/myspace/target/myweb-0.0.5.war(<artifactId>myweb</artifactId>-<version>0.0.5</version>.<packaging>war</packaging>
