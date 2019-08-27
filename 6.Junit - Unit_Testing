@@ -69,5 +69,8 @@ How to skip unit test
     </configuration>
 </plugin>	
 
+ Surefire Maven plugin, that is responsible for running JUnit tests, can be configured to exclude or include specific tests,
+ according to a custom naming scheme.
+ 
 
  
