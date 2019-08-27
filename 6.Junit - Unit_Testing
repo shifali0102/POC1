@@ -15,7 +15,7 @@ example ur junit dependency in pom.xml for junit package mention in test class.
      
   nothing else is needed for executing for unit tests.
   
-  now u can publish the results of junit
+  now u can publish the results of junit-A unit testing framework
        --->junit 'target/surefire-reports/*.xml'
        
 In this path /var/lib/jenkins/myspace/target/surefire-reports you will find the .xml file for your test classes that were there
