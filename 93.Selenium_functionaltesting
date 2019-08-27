@@ -1,0 +1,21 @@
+https://www.baeldung.com/maven-integration-test
+
+we’ll go over a number of different ways to use Maven for integration testing and to separate integration tests from unit tests.
+
+An important thing to notice about integration testing is that test methods often take quite a long time to run.
+
+As a result, we should exclude integration tests from the default build lifecycle, keeping them from slowing down the whole process 
+each time we build a project.
+A convenient way to separate integration tests is to use build profiles. This kind of configuration enables us to execute integration
+tests only when necessary – by specifying a suitable profile
+The simplest way to run integration tests is to use the Maven failsafe plugin.
+By default, the Maven surefire plugin executes unit tests during the test phase, while the failsafe plugin runs integration tests
+in the integration-test phase.
+The default naming conventions enforced by surefire and failsafe are different, thus we just need to follow these conventions to 
+segregate unit and integration tests.
+
+The execution of the 
+surefire plugin includes all classes whose name starts with Test, or ends with Test, Tests or TestCase.
+In contrast,
+the failsafe plugin executes test methods in classes whose name starts with IT, or ends with IT or ITCase.
+
