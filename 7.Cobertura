@@ -2,6 +2,7 @@ Code Coverage :
 https://www.mkyong.com/qa/maven-cobertura-code-coverage-example/
 
 --> mvn cobertura:cobertura
+(plugin:goal)
 Maven will generate the Cobertura code coverage report at ${project}/target/site/cobertura/index.html.
 No need of any plugin on jenkins or on pom.xml
 
