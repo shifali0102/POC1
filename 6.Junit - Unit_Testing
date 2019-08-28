@@ -77,4 +77,20 @@ How to skip unit test
  according to a custom naming scheme.
  
 
+
+WHAT DOES mvn test DO?
+
+http://maven.apache.org/surefire/maven-surefire-plugin/test-mojo.html
+
+Specify this parameter to run individual tests by file name, overriding the parameter includes and excludes.
+Each pattern you specify here will be used to create an include pattern formatted like **/${test}.java, so you can 
+just type -Dtest=MyTest to run a single test called "foo/MyTest.java". The test patterns prefixed with a ! will be excluded. 
+This parameter overrides the parameter includes, excludes, and the TestNG parameter suiteXmlFiles. 
+Notice that these values are relative to the directory containing generated test classes of the project being tested. 
+This directory is declared by the parameter testClassesDirectory which defaults to the POM property ${project.build.testOutputDirectory}
+, typically src/test/java unless overridden.
+
+
+
+
  
